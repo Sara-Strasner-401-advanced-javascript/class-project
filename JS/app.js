@@ -20,6 +20,29 @@ function addGreeting() {
     return document.write('<h3>' + greeting + '</h3>');
 }
 
+function getItemType() {
+    var response = prompt('Would you like to book a tour to Ireland or Scotland?');
+    var Message;
+  
+    while (response !== 'Ireland' && response !== 'Scotland') {
+      response = prompt('PLEASE ANSWER EXACT!  Would you like to book a tour to Ireland or Scotland?')
+    }
+    if (response === 'Ireland') {
+      Message = 'Great! The Ireland tour leaves in June.';
+    } else if (response === 'Scotland') {
+      Message = 'Great! The Scotland tour leaves in July.';
+    }
+    return document.write('<h3>' + Message + '</h3>');
+  }
+
+  function howMany(){
+    var count = prompt('Great, how many people are in your party?');
+  
+    while(isNaN(count) || count === ''){
+      count = prompt('PLEASE ENTER A NUMBER! How many people are in your party?')
+    }
+    return document.write('<h3>' + count + '</h3>');
+  }
 
 function askPreference() {
     var response = prompt('Do you like to travel?');
