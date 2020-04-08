@@ -34,7 +34,7 @@ function getItemType() {
     var item;
   
     while (response !== 'Ireland' && response !== 'Scotland') {
-      response = prompt('PLEASE ANSWER EXACT!  Would you like to purchase Ireland or Scotland?')
+      response = prompt('PLEASE ANSWER EXACT! Would you like to purchase Ireland or Scotland?')
     }
     if (response === 'Ireland') {
       item = '<img src="images/ireland.jpg">';
