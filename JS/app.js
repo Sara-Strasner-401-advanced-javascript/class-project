@@ -26,9 +26,6 @@
 //     }
 //     return document.write(result);
 
-
-// Start of Ryan's Code 
-
 function getItemType() {
     var response = prompt('Would you like to book a tour to Ireland or Scotland?');
     var item;
